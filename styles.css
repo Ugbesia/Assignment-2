@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap");
+
+body {
+	font-family: "Sofia Sans", sans-serif;
+	background-color: #f7fdfc;
+	padding: 0px;
+	margin: 0px;
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-family: "Sofia Sans", sans-serif;
+
+	height: 100vh;
+	box-sizing: border-box;
+	margin: 0 auto;
+	width: 1200px;
+	padding: 0px;
+}
+
+.text {
+	box-sizing: border-box;
+}
+
+.text-image {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* background-color: aqua; */
+	border-radius: 50%;
+}
+
+.headText {
+	font-family: Brown;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 50px;
+	letter-spacing: -0.800000011920929px;
+	text-align: left;
+	font-family: "Sofia Sans", sans-serif;
+}
+
+.paragraph {
+	font-family: Brown;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 25px;
+	letter-spacing: 0px;
+	text-align: left;
+	font-family: "Sofia Sans", sans-serif;
+}
+
+.form {
+	background-color: #fff;
+	box-shadow: 0px 4px 50px 0px #0408131a;
+	padding: 40px;
+	width: 50%;
+	box-sizing: border-box;
+}
+
+.form .flex {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 40px;
+	width: 100%;
+}
+
+.form div {
+	width: 100%;
+	box-sizing: border-box;
+}
+
+label {
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 14px;
+	letter-spacing: 0.10000000149011612px;
+	text-align: left;
+	display: block;
+	margin-bottom: 8px;
+	margin-top: 25px;
+}
+
+input {
+	width: 100%;
+	padding: 15px 5px;
+	top: 24px;
+	border: 1px solid #f0f0f0;
+	box-sizing: border-box;
+}
+
+input:focus {
+	outline: 1px solid #2ec4b6;
+}
+
+select {
+	width: 100%;
+	padding: 15px 5px;
+	top: 24px;
+	border: 1px solid #f0f0f0;
+}
+select:focus {
+	outline: 1px solid #2ec4b6;
+}
+
+button {
+	width: 100%;
+	padding: 15px 5px;
+	background: #2ec4b6;
+	border: none;
+	color: #fff;
+	font-weight: 500px;
+	margin-top: 20px;
+	box-sizing: border-box;
+}
+.terms_desk {
+	font-family: "Sofia Sans", sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 25px;
+	letter-spacing: 0px;
+	text-align: left;
+	font-family: "Sofia Sans", sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 25px;
+	letter-spacing: 0px;
+	text-align: center;
+}
+.terms_mobile{
+	display: none;
+}
+.highlight {
+	color: #2ec4b6;
+}
+
+@media (max-width: 600px) {
+	.container {
+		flex-direction: column;
+		width: 100%;
+		padding: 10px 15px;
+	}
+
+	.form {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	.text-image {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		/* background-color: aqua; */
+		border-radius: 50%;
+		width: 60px;
+		height: 60px;
+	}
+
+	.headText {
+		font-family: Brown;
+		font-size: 40px;
+		font-weight: 700;
+		line-height: 50px;
+		letter-spacing: -0.800000011920929px;
+		text-align: left;
+		font-family: "Sofia Sans", sans-serif;
+	}
+
+	.paragraph {
+		visibility: hidden;
+		position: relative;
+	}
+
+	.paragraph:after {
+		visibility: visible;
+		position: absolute;
+		top: 0;
+		left: 0;
+		content: "Inspiring wholesome harmony for the mind, body and spirit, for everyone, everywhere.";
+	}
+
+	.form {
+		background-color: #fff;
+		box-shadow: 0px 4px 50px 0px #0408131a;
+		padding: 20px;
+		width: 100%;
+		box-sizing: border-box;
+	}
+	
+	.form .flex {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 10px;
+		width: 100%;
+		flex-direction: column;
+	}
+	
+	.form div {
+		width: 100%;
+		box-sizing: border-box;
+	}
+	.terms_mobile {
+		font-family: "Sofia Sans", sans-serif;
+		font-size: 14px;
+		font-weight: 500;
+		line-height: 25px;
+		letter-spacing: 0px;
+		text-align: left;
+		font-family: "Sofia Sans", sans-serif;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 25px;
+		letter-spacing: 0px;
+		text-align: center;
+		display: inline;
+		margin-bottom: 20px;
+	}
+	
+	.terms_desk {
+		display: none;
+	}
+}
